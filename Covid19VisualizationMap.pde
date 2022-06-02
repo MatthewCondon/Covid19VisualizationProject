@@ -177,7 +177,7 @@ void draw() {
     //Grabs data and displays on automatic timer
     textSize(25);
     text(allDates.get(place), 50, 450);
-    if (millis() - timer > 500) { // Key: 1000 = 1 second, 100 = 1/10 of a second
+    if (millis() - timer > 500) { // Key: 1000 = 1 second, 100 = 1/10 of a second, 500 = 1/2 of a second
       timer = millis();
       getData(allDates.get(place));
       next();
@@ -225,7 +225,7 @@ void stateCircles() {
   else if (Alabama>100&&Alabama<=200) fill(255, 174, 0, 60);
   else if (Alabama>200&&Alabama<=1000) fill(166, 27, 33, 60);
   else if (Alabama>1000) fill(90, 32, 138, 60);
-  ellipse(680, 410, Alabama/30, Alabama/30);
+  ellipse(680, 410, Alabama/25, Alabama/25);
   // Alaska
   if (Alaska==0) fill(255, 255, 255, 60);
   else if (Alaska>0&&Alaska<=20) fill(63, 161, 34, 60);
@@ -233,7 +233,7 @@ void stateCircles() {
   else if (Alaska>100&&Alaska<=200) fill(255, 174, 0, 60);
   else if (Alaska>200&&Alaska<=1000) fill(166, 27, 33, 60);
   else if (Alaska>1000) fill(90, 32, 138, 60);
-  ellipse(260, 525, Alaska/30, Alaska/30);
+  ellipse(260, 525, Alaska/25, Alaska/25);
   // Arizona
   if (Arizona==0) fill(255, 255, 255, 60);
   else if (Arizona>0&&Arizona<=20) fill(63, 161, 34, 60);
@@ -241,7 +241,7 @@ void stateCircles() {
   else if (Arizona>100&&Arizona<=200) fill(255, 174, 0, 60);
   else if (Arizona>200&&Arizona<=1000) fill(166, 27, 33, 60);
   else if (Arizona>1000) fill(90, 32, 138, 60);
-  ellipse(245, 360, Arizona/30, Arizona/30);
+  ellipse(245, 360, Arizona/25, Arizona/25);
   // Arkansas
   if (Arkansas==0) fill(255, 255, 255, 60);
   else if (Arkansas>0&&Arkansas<=20) fill(63, 161, 34, 60);
@@ -249,7 +249,7 @@ void stateCircles() {
   else if (Arkansas>100&&Arkansas<=200) fill(255, 174, 0, 60);
   else if (Arkansas>200&&Arkansas<=1000) fill(166, 27, 33, 60);
   else if (Arkansas>1000) fill(90, 32, 138, 60);
-  ellipse(575, 370, Arkansas/30, Arkansas/30);
+  ellipse(575, 370, Arkansas/25, Arkansas/25);
   // California
   if (California==0) fill(255, 255, 255, 60);
   else if (California>0&&California<=20) fill(63, 161, 34, 60);
@@ -257,7 +257,7 @@ void stateCircles() {
   else if (California>100&&California<=200) fill(255, 174, 0, 60);
   else if (California>200&&California<=1000) fill(166, 27, 33, 60);
   else if (California>1000) fill(90, 32, 138, 60);
-  ellipse(120, 280, California/30, California/30);
+  ellipse(120, 280, California/25, California/25);
   // Colorado
   if (Colorado==0) fill(255, 255, 255, 60);
   else if (Colorado>0&&Colorado<=20) fill(63, 161, 34, 60);
@@ -265,7 +265,7 @@ void stateCircles() {
   else if (Colorado>100&&Colorado<=200) fill(255, 174, 0, 60);
   else if (Colorado>200&&Colorado<=1000) fill(166, 27, 33, 60);
   else if (Colorado>1000) fill(90, 32, 138, 60);
-  ellipse(360, 270, Colorado/30, Colorado/30);
+  ellipse(360, 270, Colorado/25, Colorado/25);
   // Connecticut
   if (Connecticut==0) fill(255, 255, 255, 60);
   else if (Connecticut>0&&Connecticut<=20) fill(63, 161, 34, 60);
@@ -273,7 +273,7 @@ void stateCircles() {
   else if (Connecticut>100&&Connecticut<=200) fill(255, 174, 0, 60);
   else if (Connecticut>200&&Connecticut<=1000) fill(166, 27, 33, 60);
   else if (Connecticut>1000) fill(90, 32, 138, 60);
-  ellipse(875, 180, Connecticut/30, Connecticut/30);
+  ellipse(875, 180, Connecticut/25, Connecticut/25);
   // Delaware
   if (Delaware==0) fill(255, 255, 255, 60);
   else if (Delaware>0&&Delaware<=20) fill(63, 161, 34, 60);
@@ -281,7 +281,7 @@ void stateCircles() {
   else if (Delaware>100&&Delaware<=200) fill(255, 174, 0, 60);
   else if (Delaware>200&&Delaware<=1000) fill(166, 27, 33, 60);
   else if (Delaware>1000) fill(90, 32, 138, 60);
-  ellipse(845, 245, Delaware/30, Delaware/30);
+  ellipse(845, 245, Delaware/25, Delaware/25);
   // Florida
   if (Florida==0) fill(255, 255, 255, 60);
   else if (Florida>0&&Florida<=20) fill(63, 161, 34, 60);
@@ -289,7 +289,7 @@ void stateCircles() {
   else if (Florida>100&&Florida<=200) fill(255, 174, 0, 60);
   else if (Florida>200&&Florida<=1000) fill(166, 27, 33, 60);
   else if (Florida>1000) fill(90, 32, 138, 60);
-  ellipse(785, 500, Florida/30, Florida/30);
+  ellipse(785, 500, Florida/25, Florida/25);
   // Georgia
   if (Georgia==0) fill(255, 255, 255, 60);
   else if (Georgia>0&&Georgia<=20) fill(63, 161, 34, 60);
@@ -297,7 +297,7 @@ void stateCircles() {
   else if (Georgia>100&&Georgia<=200) fill(255, 174, 0, 60);
   else if (Georgia>200&&Georgia<=1000) fill(166, 27, 33, 60);
   else if (Georgia>1000) fill(90, 32, 138, 60);
-  ellipse(740, 400, Georgia/30, Georgia/30);
+  ellipse(740, 400, Georgia/25, Georgia/25);
   // Hawaii
   if (Hawaii==0) fill(255, 255, 255, 60);
   else if (Hawaii>0&&Hawaii<=20) fill(63, 161, 34, 60);
@@ -305,7 +305,7 @@ void stateCircles() {
   else if (Hawaii>100&&Hawaii<=200) fill(255, 174, 0, 60);
   else if (Hawaii>200&&Hawaii<=1000) fill(166, 27, 33, 60);
   else if (Hawaii>1000) fill(90, 32, 138, 60);
-  ellipse(112, 518, Hawaii/30, Hawaii/30);
+  ellipse(112, 518, Hawaii/25, Hawaii/25);
   // Idaho
   if (Idaho==0) fill(255, 255, 255, 60);
   else if (Idaho>0&&Idaho<=20) fill(63, 161, 34, 60);
@@ -313,7 +313,7 @@ void stateCircles() {
   else if (Idaho>100&&Idaho<=200) fill(255, 174, 0, 60);
   else if (Idaho>200&&Idaho<=1000) fill(166, 27, 33, 60);
   else if (Idaho>1000) fill(90, 32, 138, 60);
-  ellipse(237, 148, Idaho/30, Idaho/30);
+  ellipse(237, 148, Idaho/25, Idaho/25);
   // Illinois
   if (Illinois==0) fill(255, 255, 255, 60);
   else if (Illinois>0&&Illinois<=20) fill(63, 161, 34, 60);
@@ -321,7 +321,7 @@ void stateCircles() {
   else if (Illinois>100&&Illinois<=200) fill(255, 174, 0, 60);
   else if (Illinois>200&&Illinois<=1000) fill(166, 27, 33, 60);
   else if (Illinois>1000) fill(90, 32, 138, 60);
-  ellipse(622, 256, Illinois/30, Illinois/30);
+  ellipse(622, 256, Illinois/25, Illinois/25);
   // Indiana
   if (Indiana==0) fill(255, 255, 255, 60);
   else if (Indiana>0&&Indiana<=20) fill(63, 161, 34, 60);
@@ -329,7 +329,7 @@ void stateCircles() {
   else if (Indiana>100&&Indiana<=200) fill(255, 174, 0, 60);
   else if (Indiana>200&&Indiana<=1000) fill(166, 27, 33, 60);
   else if (Indiana>1000) fill(90, 32, 138, 60);
-  ellipse(669, 250, Indiana/30, Indiana/30);
+  ellipse(669, 250, Indiana/25, Indiana/25);
   // Iowa
   if (Iowa==0) fill(255, 255, 255, 60);
   else if (Iowa>0&&Iowa<=20) fill(63, 161, 34, 60);
@@ -337,7 +337,7 @@ void stateCircles() {
   else if (Iowa>100&&Iowa<=200) fill(255, 174, 0, 60);
   else if (Iowa>200&&Iowa<=1000) fill(166, 27, 33, 60);
   else if (Iowa>1000) fill(90, 32, 138, 60);
-  ellipse(551, 218, Iowa/30, Iowa/30);
+  ellipse(551, 218, Iowa/25, Iowa/25);
   // Kansas
   if (Kansas==0) fill(255, 255, 255, 60);
   else if (Kansas>0&&Kansas<=20) fill(63, 161, 34, 60);
@@ -345,7 +345,7 @@ void stateCircles() {
   else if (Kansas>100&&Kansas<=200) fill(255, 174, 0, 60);
   else if (Kansas>200&&Kansas<=1000) fill(166, 27, 33, 60);
   else if (Kansas>1000) fill(90, 32, 138, 60);
-  ellipse(474, 290, Kansas/30, Kansas/30);
+  ellipse(474, 290, Kansas/25, Kansas/25);
   // Kentucky
   if (Kentucky==0) fill(255, 255, 255, 60);
   else if (Kentucky>0&&Kentucky<=20) fill(63, 161, 34, 60);
@@ -353,7 +353,7 @@ void stateCircles() {
   else if (Kentucky>100&&Kentucky<=200) fill(255, 174, 0, 60);
   else if (Kentucky>200&&Kentucky<=1000) fill(166, 27, 33, 60);
   else if (Kentucky>1000) fill(90, 32, 138, 60);
-  ellipse(697, 301, Kentucky/30, Kentucky/30);
+  ellipse(697, 301, Kentucky/25, Kentucky/25);
   // Louisiana
   if (Louisiana==0) fill(255, 255, 255, 60);
   else if (Louisiana>0&&Louisiana<=20) fill(63, 161, 34, 60);
@@ -361,7 +361,7 @@ void stateCircles() {
   else if (Louisiana>100&&Louisiana<=200) fill(255, 174, 0, 60);
   else if (Louisiana>200&&Louisiana<=1000) fill(166, 27, 33, 60);
   else if (Louisiana>1000) fill(90, 32, 138, 60);
-  ellipse(577, 450, Louisiana/30, Louisiana/30);
+  ellipse(577, 450, Louisiana/25, Louisiana/25);
   // Maine
   if (Maine==0) fill(255, 255, 255, 60);
   else if (Maine>0&&Maine<=20) fill(63, 161, 34, 60);
@@ -369,7 +369,7 @@ void stateCircles() {
   else if (Maine>100&&Maine<=200) fill(255, 174, 0, 60);
   else if (Maine>200&&Maine<=1000) fill(166, 27, 33, 60);
   else if (Maine>1000) fill(90, 32, 138, 60);
-  ellipse(905, 87, Maine/30, Maine/30);
+  ellipse(905, 87, Maine/25, Maine/25);
   // Maryland
   if (Maryland==0) fill(255, 255, 255, 60);
   else if (Maryland>0&&Maryland<=20) fill(63, 161, 34, 60);
@@ -377,7 +377,7 @@ void stateCircles() {
   else if (Maryland>100&&Maryland<=200) fill(255, 174, 0, 60);
   else if (Maryland>200&&Maryland<=1000) fill(166, 27, 33, 60);
   else if (Maryland>1000) fill(90, 32, 138, 60);
-  ellipse(826, 247, Maryland/30, Maryland/30);
+  ellipse(826, 247, Maryland/25, Maryland/25);
   // Massachusetts
   if (Massachusetts==0) fill(255, 255, 255, 60);
   else if (Massachusetts>0&&Massachusetts<=20) fill(63, 161, 34, 60);
@@ -385,7 +385,7 @@ void stateCircles() {
   else if (Massachusetts>100&&Massachusetts<=200) fill(255, 174, 0, 60);
   else if (Massachusetts>200&&Massachusetts<=1000) fill(166, 27, 33, 60);
   else if (Massachusetts>1000) fill(90, 32, 138, 60);
-  ellipse(885, 161, Massachusetts/30, Massachusetts/30);
+  ellipse(885, 161, Massachusetts/25, Massachusetts/25);
   // Michigan
   if (Michigan==0) fill(255, 255, 255, 60);
   else if (Michigan>0&&Michigan<=20) fill(63, 161, 34, 60);
@@ -393,7 +393,7 @@ void stateCircles() {
   else if (Michigan>100&&Michigan<=200) fill(255, 174, 0, 60);
   else if (Michigan>200&&Michigan<=1000) fill(166, 27, 33, 60);
   else if (Michigan>1000) fill(90, 32, 138, 60);
-  ellipse(687, 172, Michigan/30, Michigan/30);
+  ellipse(687, 172, Michigan/25, Michigan/25);
   // Minnesota
   if (Minnesota==0) fill(255, 255, 255, 60);
   else if (Minnesota>0&&Minnesota<=20) fill(63, 161, 34, 60);
@@ -401,7 +401,7 @@ void stateCircles() {
   else if (Minnesota>100&&Minnesota<=200) fill(255, 174, 0, 60);
   else if (Minnesota>200&&Minnesota<=1000) fill(166, 27, 33, 60);
   else if (Minnesota>1000) fill(90, 32, 138, 60);
-  ellipse(533, 136, Minnesota/30, Minnesota/30);
+  ellipse(533, 136, Minnesota/25, Minnesota/25);
   // Mississippi
   if (Mississippi==0) fill(255, 255, 255, 60);
   else if (Mississippi>0&&Mississippi<=20) fill(63, 161, 34, 60);
@@ -409,7 +409,7 @@ void stateCircles() {
   else if (Mississippi>100&&Mississippi<=200) fill(255, 174, 0, 60);
   else if (Mississippi>200&&Mississippi<=1000) fill(166, 27, 33, 60);
   else if (Mississippi>1000) fill(90, 32, 138, 60);
-  ellipse(624, 411, Mississippi/30, Mississippi/30);
+  ellipse(624, 411, Mississippi/25, Mississippi/25);
   // Missouri
   if (Missouri==0) fill(255, 255, 255, 60);
   else if (Missouri>0&&Missouri<=20) fill(63, 161, 34, 60);
@@ -417,7 +417,7 @@ void stateCircles() {
   else if (Missouri>100&&Missouri<=200) fill(255, 174, 0, 60);
   else if (Missouri>200&&Missouri<=1000) fill(166, 27, 33, 60);
   else if (Missouri>1000) fill(90, 32, 138, 60);
-  ellipse(568, 292, Missouri/30, Missouri/30);
+  ellipse(568, 292, Missouri/25, Missouri/25);
   // Montana
   if (Montana==0) fill(255, 255, 255, 60);
   else if (Montana>0&&Montana<=20) fill(63, 161, 34, 60);
@@ -425,7 +425,7 @@ void stateCircles() {
   else if (Montana>100&&Montana<=200) fill(255, 174, 0, 60);
   else if (Montana>200&&Montana<=1000) fill(166, 27, 33, 60);
   else if (Montana>1000) fill(90, 32, 138, 60);
-  ellipse(320, 97, Montana/30, Montana/30);
+  ellipse(320, 97, Montana/25, Montana/25);
   // Nebraska
   if (Nebraska==0) fill(255, 255, 255, 60);
   else if (Nebraska>0&&Nebraska<=20) fill(63, 161, 34, 60);
@@ -433,7 +433,7 @@ void stateCircles() {
   else if (Nebraska>100&&Nebraska<=200) fill(255, 174, 0, 60);
   else if (Nebraska>200&&Nebraska<=1000) fill(166, 27, 33, 60);
   else if (Nebraska>1000) fill(90, 32, 138, 60);
-  ellipse(452, 226, Nebraska/30, Nebraska/30);
+  ellipse(452, 226, Nebraska/25, Nebraska/25);
   // Nevada
   if (Nevada==0) fill(255, 255, 255, 60);
   else if (Nevada>0&&Nevada<=20) fill(63, 161, 34, 60);
@@ -441,7 +441,7 @@ void stateCircles() {
   else if (Nevada>100&&Nevada<=200) fill(255, 174, 0, 60);
   else if (Nevada>200&&Nevada<=1000) fill(166, 27, 33, 60);
   else if (Nevada>1000) fill(90, 32, 138, 60);
-  ellipse(182, 240, Nevada/30, Nevada/30);
+  ellipse(182, 240, Nevada/25, Nevada/25);
   // NewHampshire
   if (NewHampshire==0) fill(255, 255, 255, 60);
   else if (NewHampshire>0&&NewHampshire<=20) fill(63, 161, 34, 60);
@@ -449,7 +449,7 @@ void stateCircles() {
   else if (NewHampshire>100&&NewHampshire<=200) fill(255, 174, 0, 60);
   else if (NewHampshire>200&&NewHampshire<=1000) fill(166, 27, 33, 60);
   else if (NewHampshire>1000) fill(90, 32, 138, 60);
-  ellipse(882, 139, NewHampshire/30, NewHampshire/30);
+  ellipse(882, 139, NewHampshire/25, NewHampshire/25);
   // NewJersey
   if (NewJersey==0) fill(255, 255, 255, 60);
   else if (NewJersey>0&&NewJersey<=20) fill(63, 161, 34, 60);
@@ -457,7 +457,7 @@ void stateCircles() {
   else if (NewJersey>100&&NewJersey<=200) fill(255, 174, 0, 60);
   else if (NewJersey>200&&NewJersey<=1000) fill(166, 27, 33, 60);
   else if (NewJersey>1000) fill(90, 32, 138, 60);
-  ellipse(853, 217, NewJersey/30, NewJersey/30);
+  ellipse(853, 217, NewJersey/25, NewJersey/25);
   // NewMexico
   if (NewMexico==0) fill(255, 255, 255, 60);
   else if (NewMexico>0&&NewMexico<=20) fill(63, 161, 34, 60);
@@ -465,7 +465,7 @@ void stateCircles() {
   else if (NewMexico>100&&NewMexico<=200) fill(255, 174, 0, 60);
   else if (NewMexico>200&&NewMexico<=1000) fill(166, 27, 33, 60);
   else if (NewMexico>1000) fill(90, 32, 138, 60);
-  ellipse(338, 369, NewMexico/30, NewMexico/30);
+  ellipse(338, 369, NewMexico/25, NewMexico/25);
   // NewYork
   if (NewYork==0) fill(255, 255, 255, 60);
   else if (NewYork>0&&NewYork<=20) fill(63, 161, 34, 60);
@@ -473,7 +473,7 @@ void stateCircles() {
   else if (NewYork>100&&NewYork<=200) fill(255, 174, 0, 60);
   else if (NewYork>200&&NewYork<=1000) fill(166, 27, 33, 60);
   else if (NewYork>1000) fill(90, 32, 138, 60);
-  ellipse(835, 159, NewYork/30, NewYork/30);
+  ellipse(835, 159, NewYork/25, NewYork/25);
   // NorthCarolina
   if (NorthCarolina==0) fill(255, 255, 255, 60);
   else if (NorthCarolina>0&&NorthCarolina<=20) fill(63, 161, 34, 60);
@@ -481,7 +481,7 @@ void stateCircles() {
   else if (NorthCarolina>100&&NorthCarolina<=200) fill(255, 174, 0, 60);
   else if (NorthCarolina>200&&NorthCarolina<=1000) fill(166, 27, 33, 60);
   else if (NorthCarolina>1000) fill(90, 32, 138, 60);
-  ellipse(807, 326, NorthCarolina/30, NorthCarolina/30);
+  ellipse(807, 326, NorthCarolina/25, NorthCarolina/25);
   // NorthDakota
   if (NorthDakota==0) fill(255, 255, 255, 60);
   else if (NorthDakota>0&&NorthDakota<=20) fill(63, 161, 34, 60);
@@ -489,7 +489,7 @@ void stateCircles() {
   else if (NorthDakota>100&&NorthDakota<=200) fill(255, 174, 0, 60);
   else if (NorthDakota>200&&NorthDakota<=1000) fill(166, 27, 33, 60);
   else if (NorthDakota>1000) fill(90, 32, 138, 60);
-  ellipse(448, 98, NorthDakota/30, NorthDakota/30);
+  ellipse(448, 98, NorthDakota/25, NorthDakota/25);
   // Ohio
   if (Ohio==0) fill(255, 255, 255, 60);
   else if (Ohio>0&&Ohio<=20) fill(63, 161, 34, 60);
@@ -497,7 +497,7 @@ void stateCircles() {
   else if (Ohio>100&&Ohio<=200) fill(255, 174, 0, 60);
   else if (Ohio>200&&Ohio<=1000) fill(166, 27, 33, 60);
   else if (Ohio>1000) fill(90, 32, 138, 60);
-  ellipse(723, 239, Ohio/30, Ohio/30);
+  ellipse(723, 239, Ohio/25, Ohio/25);
   // Oklahoma
   if (Oklahoma==0) fill(255, 255, 255, 60);
   else if (Oklahoma>0&&Oklahoma<=20) fill(63, 161, 34, 60);
@@ -505,7 +505,7 @@ void stateCircles() {
   else if (Oklahoma>100&&Oklahoma<=200) fill(255, 174, 0, 60);
   else if (Oklahoma>200&&Oklahoma<=1000) fill(166, 27, 33, 60);
   else if (Oklahoma>1000) fill(90, 32, 138, 60);
-  ellipse(485, 355, Oklahoma/30, Oklahoma/30);
+  ellipse(485, 355, Oklahoma/25, Oklahoma/25);
   // Oregon
   if (Oregon==0) fill(255, 255, 255, 60);
   else if (Oregon>0&&Oregon<=20) fill(63, 161, 34, 60);
@@ -513,7 +513,7 @@ void stateCircles() {
   else if (Oregon>100&&Oregon<=200) fill(255, 174, 0, 60);
   else if (Oregon>200&&Oregon<=1000) fill(166, 27, 33, 60);
   else if (Oregon>1000) fill(90, 32, 138, 60);
-  ellipse(136, 129, Oregon/30, Oregon/30);
+  ellipse(136, 129, Oregon/25, Oregon/25);
   // Pennsylvania
   if (Pennsylvania==0) fill(255, 255, 255, 60);
   else if (Pennsylvania>0&&Pennsylvania<=20) fill(63, 161, 34, 60);
@@ -521,7 +521,7 @@ void stateCircles() {
   else if (Pennsylvania>100&&Pennsylvania<=200) fill(255, 174, 0, 60);
   else if (Pennsylvania>200&&Pennsylvania<=1000) fill(166, 27, 33, 60);
   else if (Pennsylvania>1000) fill(90, 32, 138, 60);
-  ellipse(800, 211, Pennsylvania/30, Pennsylvania/30);
+  ellipse(800, 211, Pennsylvania/25, Pennsylvania/25);
   // RhodeIsland
   if (RhodeIsland==0) fill(255, 255, 255, 60);
   else if (RhodeIsland>0&&RhodeIsland<=20) fill(63, 161, 34, 60);
@@ -529,7 +529,7 @@ void stateCircles() {
   else if (RhodeIsland>100&&RhodeIsland<=200) fill(255, 174, 0, 60);
   else if (RhodeIsland>200&&RhodeIsland<=1000) fill(166, 27, 33, 60);
   else if (RhodeIsland>1000) fill(90, 32, 138, 60);
-  ellipse(894, 175, RhodeIsland/30, RhodeIsland/30);
+  ellipse(894, 175, RhodeIsland/25, RhodeIsland/25);
   // SouthCarolina
   if (SouthCarolina==0) fill(255, 255, 255, 60);
   else if (SouthCarolina>0&&SouthCarolina<=20) fill(63, 161, 34, 60);
@@ -537,7 +537,7 @@ void stateCircles() {
   else if (SouthCarolina>100&&SouthCarolina<=200) fill(255, 174, 0, 60);
   else if (SouthCarolina>200&&SouthCarolina<=1000) fill(166, 27, 33, 60);
   else if (SouthCarolina>1000) fill(90, 32, 138, 60);
-  ellipse(777, 367, SouthCarolina/30, SouthCarolina/30);
+  ellipse(777, 367, SouthCarolina/25, SouthCarolina/25);
   // SouthDakota
   if (SouthDakota==0) fill(255, 255, 255, 60);
   else if (SouthDakota>0&&SouthDakota<=20) fill(63, 161, 34, 60);
@@ -545,7 +545,7 @@ void stateCircles() {
   else if (SouthDakota>100&&SouthDakota<=200) fill(255, 174, 0, 60);
   else if (SouthDakota>200&&SouthDakota<=1000) fill(166, 27, 33, 60);
   else if (SouthDakota>1000) fill(90, 32, 138, 60);
-  ellipse(446, 163, SouthDakota/30, SouthDakota/30);
+  ellipse(446, 163, SouthDakota/25, SouthDakota/25);
   // Tennessee
   if (Tennessee==0) fill(255, 255, 255, 60);
   else if (Tennessee>0&&Tennessee<=20) fill(63, 161, 34, 60);
@@ -553,7 +553,7 @@ void stateCircles() {
   else if (Tennessee>100&&Tennessee<=200) fill(255, 174, 0, 60);
   else if (Tennessee>200&&Tennessee<=1000) fill(166, 27, 33, 60);
   else if (Tennessee>1000) fill(90, 32, 138, 60);
-  ellipse(674, 340, Tennessee/30, Tennessee/30);
+  ellipse(674, 340, Tennessee/25, Tennessee/25);
   // Texas
   if (Texas==0) fill(255, 255, 255, 60);
   else if (Texas>0&&Texas<=20) fill(63, 161, 34, 60);
@@ -561,7 +561,7 @@ void stateCircles() {
   else if (Texas>100&&Texas<=200) fill(255, 174, 0, 60);
   else if (Texas>200&&Texas<=1000) fill(166, 27, 33, 60);
   else if (Texas>1000) fill(90, 32, 138, 60);
-  ellipse(460, 443, Texas/30, Texas/30);
+  ellipse(460, 443, Texas/25, Texas/25);
   // Utah
   if (Utah==0) fill(255, 255, 255, 60);
   else if (Utah>0&&Utah<=20) fill(63, 161, 34, 60);
@@ -569,7 +569,7 @@ void stateCircles() {
   else if (Utah>100&&Utah<=200) fill(255, 174, 0, 60);
   else if (Utah>200&&Utah<=1000) fill(166, 27, 33, 60);
   else if (Utah>1000) fill(90, 32, 138, 60);
-  ellipse(260, 253, Utah/30, Utah/30);
+  ellipse(260, 253, Utah/25, Utah/25);
   // Vermont
   if (Vermont==0) fill(255, 255, 255, 60);
   else if (Vermont>0&&Vermont<=20) fill(63, 161, 34, 60);
@@ -577,7 +577,7 @@ void stateCircles() {
   else if (Vermont>100&&Vermont<=200) fill(255, 174, 0, 60);
   else if (Vermont>200&&Vermont<=1000) fill(166, 27, 33, 60);
   else if (Vermont>1000) fill(90, 32, 138, 60);
-  ellipse(861, 131, Vermont/30, Vermont/30);
+  ellipse(861, 131, Vermont/25, Vermont/25);
   // Virginia
   if (Virginia==0) fill(255, 255, 255, 60);
   else if (Virginia>0&&Virginia<=20) fill(63, 161, 34, 60);
@@ -585,7 +585,7 @@ void stateCircles() {
   else if (Virginia>100&&Virginia<=200) fill(255, 174, 0, 60);
   else if (Virginia>200&&Virginia<=1000) fill(166, 27, 33, 60);
   else if (Virginia>1000) fill(90, 32, 138, 60);
-  ellipse(803, 281, Virginia/30, Virginia/30);
+  ellipse(803, 281, Virginia/25, Virginia/25);
   // Washington
   if (Washington==0) fill(255, 255, 255, 60);
   else if (Washington>0&&Washington<=20) fill(63, 161, 34, 60);
@@ -593,7 +593,7 @@ void stateCircles() {
   else if (Washington>100&&Washington<=200) fill(255, 174, 0, 60);
   else if (Washington>200&&Washington<=1000) fill(166, 27, 33, 60);
   else if (Washington>1000) fill(90, 32, 138, 60);
-  ellipse(162, 56, Washington/30, Washington/30);
+  ellipse(162, 56, Washington/25, Washington/25);
   // WestVirginia
   if (WestVirginia==0) fill(255, 255, 255, 60);
   else if (WestVirginia>0&&WestVirginia<=20) fill(63, 161, 34, 60);
@@ -601,7 +601,7 @@ void stateCircles() {
   else if (WestVirginia>100&&WestVirginia<=200) fill(255, 174, 0, 60);
   else if (WestVirginia>200&&WestVirginia<=1000) fill(166, 27, 33, 60);
   else if (WestVirginia>1000) fill(90, 32, 138, 60);
-  ellipse(758, 266, WestVirginia/30, WestVirginia/30);
+  ellipse(758, 266, WestVirginia/25, WestVirginia/25);
   // Wisconsin
   if (Wisconsin==0) fill(255, 255, 255, 60);
   else if (Wisconsin>0&&Wisconsin<=20) fill(63, 161, 34, 60);
@@ -609,7 +609,7 @@ void stateCircles() {
   else if (Wisconsin>100&&Wisconsin<=200) fill(255, 174, 0, 60);
   else if (Wisconsin>200&&Wisconsin<=1000) fill(166, 27, 33, 60);
   else if (Wisconsin>1000) fill(90, 32, 138, 60);
-  ellipse(605, 158, Wisconsin/30, Wisconsin/30);
+  ellipse(605, 158, Wisconsin/25, Wisconsin/25);
   // Wyoming
   if (Wyoming==0) fill(255, 255, 255, 60);
   else if (Wyoming>0&&Wyoming<=20) fill(63, 161, 34, 60);
@@ -617,5 +617,5 @@ void stateCircles() {
   else if (Wyoming>100&&Wyoming<=200) fill(255, 174, 0, 60);
   else if (Wyoming>200&&Wyoming<=1000) fill(166, 27, 33, 60);
   else if (Wyoming>1000) fill(90, 32, 138, 60);
-  ellipse(337, 190, Wyoming/30, Wyoming/30);
+  ellipse(337, 190, Wyoming/25, Wyoming/25);
 }
